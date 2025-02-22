@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Сайт с вакансиями">
+  <title>Резюме</title>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <script src="../scripts/main.js"></script>
+</head>
+<body>
+<div id="root">
+  <div class="App">
+    <div class="Resume">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu"><a class="logo" href="index.html"><img
+                    src="../images/logo.png"
+                    alt="logo"></a>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link"
+                                               href="vacancy.html">Вакансии</a></li>
+                <li class="menu__list-item"><a class="menu__list-link"
+                                               href="resume.html">Резюме</a></li>
+                <li class="menu__list-item"><a class="menu__list-link"
+                                               href="employer.html">Работодателю</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="auth__block"><a class="login__link" href="#">Войти</a><a
+                    class="registration__link" href="#">Регистрация</a></div>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div class="feed-resume__search">
+          <div class="container">
+            <form class="feed-resume__search-form"><input class="feed-resume__search-input" type="text"
+                                                           placeholder="Найти вакансию">
+              <button class="feed-resume__search-button">Поиск</button>
+            </form>
+          </div>
+        </div>
+        <div class="link__block">
+          <div class="container"><a class="page__link" href="index.html">Главная</a> &gt; Резюме
+          </div>
+        </div>
+        <div class="title__block">
+          <div class="container"><h3 class="title__text">Резюме</h3></div>
+        </div>
+        <div class="filter__resume-list__wrapper">
+          <div class="container">
+            <div class="filter__resume-list__inner">
+              <form class="filter">
+                <div class="checkbox-list__inner">
+                  <div class="title__checkbox-list__wrapper"><h3 class="checkbox-list__title">Район в
+                    Томске</h3>
+                    <div class="checkbox-list">
+                      <div class="checkbox-item"><input type="checkbox" id="district1"
+                                                        name="district1" value="Oktyabrsky"><label
+                              for="district1">Октябрьский</label></div>
+                      <div class="checkbox-item"><input type="checkbox" id="district2"
+                                                        name="district2" value="Sovetsky"><label
+                              for="district2">Советский</label></div>
+                      <div class="checkbox-item"><input type="checkbox" id="district3"
+                                                        name="district3" value="Leninsky"><label
+                              for="district3">Ленинский</label></div>
+                      <div class="checkbox-item"><input type="checkbox" id="district4"
+                                                        name="district4" value="Kirovsky"><label
+                              for="district4">Кировский</label></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox-list__inner">
+                  <div class="countryside__checkbox-list">
+                    <div class="checkbox-item"><input type="checkbox" id="countryside1"
+                                                      name="countryside1" value="Seversk"><label
+                            for="countryside1">Северск</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="countryside2"
+                                                      name="countryside2" value="Other"><label
+                            for="countryside2">Районы Томской области</label></div>
+                  </div>
+                </div>
+                <div class="checkbox-list__inner"><h3 class="checkbox-list__title">Тип занятости</h3>
+                  <div class="checkbox-list__border">
+                    <div class="checkbox-item"><input type="checkbox" id="schedule1"
+                                                      name="schedule1" value="PartTime"><label
+                            for="schedule1">Подработка</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule2"
+                                                      name="schedule2" value="FullTime"><label
+                            for="schedule2">Полный рабочий день</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule3"
+                                                      name="schedule3" value="Shift"><label
+                            for="schedule3">Сменный график</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule4"
+                                                      name="schedule4" value="Distant"><label
+                            for="schedule4">Удаленная работа</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule5"
+                                                      name="schedule5" value="Night"><label
+                            for="schedule5">Ночная (вечерняя)</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule6"
+                                                      name="schedule6" value="HalfDay"><label
+                            for="schedule6">Неполный рабочий день</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule7"
+                                                      name="schedule7" value="Watch"><label
+                            for="schedule7">Вахта</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="schedule8"
+                                                      name="schedule8" value="Free"><label
+                            for="schedule8">Свободный график</label></div>
+                  </div>
+                </div>
+                <div class="checkbox-list__inner"><h3 class="checkbox-list__title">Образование</h3>
+                  <div class="checkbox-list__border">
+                    <div class="checkbox-item"><input type="checkbox" id="education1"
+                                                      name="education1" value="Secondary"><label
+                            for="education1">Среднее</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="education2"
+                                                      name="education2" value="Higher"><label
+                            for="education2">Высшее</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="education3"
+                                                      name="education3"
+                                                      value="SecondarySpecial"><label
+                            for="education3">Среднее специальное</label></div>
+                    <div class="checkbox-item"><input type="checkbox" id="education4"
+                                                      name="education4" value="Student"><label
+                            for="education4">Студент</label></div>
+                  </div>
+                </div>
+              </form>
+              <div class="resume__inner">
+                <ul class="resume-list">
+                  <li class="resume-item priority"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                  <li class="resume-item"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                  <li class="resume-item priority"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                  <li class="resume-item"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                  <li class="resume-item"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                  <li class="resume-item priority"><h3 class="resume-item__title"><a
+                          href="#" class="resume-item__link">Автоэлектрик</a>
+                  </h3>
+                    <p class="resume-item__salary">20000-50000 рублей</p>
+                    <p class="resume-item__description">Я крутой</p>
+                    <button class="resume-item__button">Связаться</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="social__location-inner">
+            <div class="social__media"><h3 class="social__media-title">Наши группы в соцсетях:</h3>
+              <ul class="social__media-list">
+                <li class="social__media-item"><a class="social__media-link"
+                                                  href="#"><img
+                        src="../images/vk-logo.png"
+                        alt="vk-logo"></a></li>
+                <li class="social__media-item"><a class="social__media-link"
+                                                  href="#"><img
+                        src="../images/classmates-logo.png"
+                        alt="classmates-logo"></a></li>
+              </ul>
+            </div>
+            <div class="location"><h3 class="location-title">Как нас найти:</h3>
+              <div class="location-text__block">
+                <div dir="auto" class="css-text-146c3p1"
+                     style="width: 340px; text-align: center; font: inherit;">Контактный телефон в
+                  Томске:
+                  78-40-46 (рабочее время)
+                  ООО «БИЗНЕС-ЖУРНАЛ-ТОМСК»
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>

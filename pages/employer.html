@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Сайт с вакансиями">
+  <title>Работодателю</title>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/job_uploader.js"></script>
+</head>
+
+<body>
+<div id="root">
+  <div class="App">
+    <div class="Employer">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu"><a class="logo" href="index.html"><img
+                    src="../images/logo.png" alt="logo"></a>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link"
+                                               href="vacancy.html">Вакансии</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="resume.html">Резюме</a>
+                </li>
+                <li class="menu__list-item"><a class="menu__list-link" href="employer.html">Работодателю</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="auth__block"><a class="login__link" href="#">Войти</a><a
+                    class="registration__link" href="#">Регистрация</a></div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="container">
+          <form class="form" id="jobForm">
+            <div class="form__group">
+              <label class="form__label" for="companyName">Название компании:</label>
+              <input class="form__input" type="text" id="companyName" name="companyName" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="jobTitle">Название вакансии:</label>
+              <input class="form__input" type="text" id="jobTitle" name="jobTitle" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="price">Цена:</label>
+              <input class="form__input" type="number" id="price" name="price" step="0.01" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="description">Описание:</label>
+              <textarea class="form__textarea" id="description" name="description" rows="5" required></textarea>
+            </div>
+
+            <button class="form__button" type="submit">Добавить</button>
+          </form>
+
+          <div class="form__output" id="jobOutput"></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="social__location-inner">
+            <div class="social__media"><h3 class="social__media-title">Наши группы в соцсетях:</h3>
+              <ul class="social__media-list">
+                <li class="social__media-item"><a class="social__media-link"
+                                                  href="#"><img
+                        src="../images/vk-logo.png"
+                        alt="vk-logo"></a></li>
+                <li class="social__media-item"><a class="social__media-link"
+                                                  href="#"><img
+                        src="../images/classmates-logo.png"
+                        alt="classmates-logo"></a></li>
+              </ul>
+            </div>
+            <div class="location"><h3 class="location-title">Как нас найти:</h3>
+              <div class="location-text__block">
+                <div dir="auto" class="css-text-146c3p1"
+                     style="width: 340px; text-align: center; font: inherit;">Контактный телефон в
+                  Томске:
+                  78-40-46 (рабочее время)
+                  ООО «БИЗНЕС-ЖУРНАЛ-ТОМСК»
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
